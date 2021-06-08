@@ -1,16 +1,16 @@
 import logo from './logo.svg';
-import Nav from './compunent/heard.js'
-import Fotter from './compunent/fotter.js'
+import Head from './compunent/head.js'
+import Footer from './compunent/footer.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <header className="App-header">
+      <Head />
+      <main className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <Fotter />
+      </main>
+      <Footer />
     </div>
   );
 }
