@@ -6,12 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .head {
   height: 50px;
   width: 100%;
@@ -19,7 +17,6 @@ code {
   display: flex;
   justify-content: space-around;
 }
-
 .head img {
   width: auto;
   height: 100%;
@@ -30,7 +27,6 @@ code {
   display: flex;
   list-style: none;
 }
-
 .footer {
   height: 50px;
   width: 100%;
