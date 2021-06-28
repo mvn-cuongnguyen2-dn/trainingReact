@@ -5,7 +5,7 @@ import About from './pages/about.js'
 import Home from './pages/home.js'
 import {Route, Switch} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'font-awesome/css/font-awesome.min.css'
 function App() {
   return (
     <div className="App">
