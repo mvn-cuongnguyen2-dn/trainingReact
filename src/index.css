@@ -100,3 +100,31 @@ main {
   font-weight: 700;
   cursor: pointer;
 }
+
+.mb-80{
+  margin-bottom: 180px;
+}
+
+.buttons-set button{
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  line-height: 40px;
+}
+label{
+  color: #000;
+  font-size: 20px;
+}
+input, select, textarea {
+  border: 1px solid #000 !important;
+  color: #000 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 20px;
+}
+.error{
+  color: red;
+  font-size: 22px;
+}
