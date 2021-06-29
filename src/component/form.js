@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import TableData from './tableData';
 
 class Form extends Component {
@@ -32,7 +32,6 @@ class Form extends Component {
       }));
     }
     const handleRemove = (val) => {
-      console.log(val,'val')
       const data = listData && listData.filter(item => item !== val);
       this.setState({
         listData: data
@@ -55,7 +54,6 @@ class Form extends Component {
           textError: 'Plz enter all data'
         });
       }
-      console.log(this.state.listData,'listData')
     }
     const {listData} = this.state;
     return (

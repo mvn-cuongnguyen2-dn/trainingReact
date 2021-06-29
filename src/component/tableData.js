@@ -23,3 +23,4 @@ class TableData extends Component {
     )
   }
 }
+export default TableData;
