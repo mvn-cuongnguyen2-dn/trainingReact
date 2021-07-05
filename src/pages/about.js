@@ -10,7 +10,6 @@ class About extends Component {
         <div className="mb-80">
           <Form/>
           <div className="list-users">
-
           </div>
         </div>
       </div>

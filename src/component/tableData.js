@@ -1,26 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class TableData extends Component {
-  constructor(props) {
-    super(props);
+const TableData = (props) =>  {
+  const handleRemove = () => {
+    props.removeItem(props.idIndex);
+    console.log('ádas');
   }
-  handleRemove = () => {
-    this.props.removeItem(this.props.data);
-  }
-  render() {
-    const data = this.props.data;
-    const inIndex = this.props.idIndex;
-    return (
-      <tr key={inIndex}>
-        <td>{data.email}</td>
-        <td>{data.country}</td>
-        <td>{data.gender === '0' ? 'Male' : 'Female'}</td>
-        <td>{data.other}</td>
-        <td className="txt-center">
-          <button className="btn-transparent" onClick={() => this.handleRemove}><i className="fa fa-trash"></i></button>
-        </td>
-      </tr>
-    )
-  }
+  const data = props.data;
+  const inIndex = props.idIndex;
+  return (
+    <tr key={inIndex}>
+      <td>{data.email}</td>
+      <td>{data.country}</td>
+      <td>{data.gender === '0' ? 'Male' : 'Female'}</td>
+      <td>{data.other}</td>
+      <td className="txt-center">
+        <button className="btn-transparent" onClick={() => handleRemove()}><i className="fa fa-trash"></i></button>
+      </td>
+    </tr>
+  )
 }
 export default TableData;
